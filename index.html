@@ -4,25 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>빈센트 반 고흐</title>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function(){//시작
-	//상단오른쪽 햄버거아이콘 클릭시,
-	let i = 0;
-	$("header button").click(function(){
-		i++;
-		if( i==1 ){
-			$("nav").slideDown();
-			$(this).text("close");
-		}else{
-			$("nav").slideUp();
-			$(this).text("menu");
-			i = 0;
-		}		
-	});
-});//끝
-</script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style>
 * {padding:0; margin:0;}
 html {scroll-behavior:smooth;}
@@ -33,7 +14,7 @@ body {font:10pt '나눔고딕'; background:black; }
 #layout {width:414px; margin:auto; position:relative;}
 
 /*상단공통*/
-iframe {width:100%;  border:none;  position:absolute; height:51.9pt; }
+iframe {width:100%;  border:none;  position:absolute; height:51.9pt;  overflow:hidden;}
 
 /*콘텐츠*/
 section h2 {display:none;}
