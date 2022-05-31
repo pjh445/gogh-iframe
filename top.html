@@ -18,8 +18,14 @@ $(document).ready(function(){//시작
 			$(this).text("menu");
 			//$("iframe" ,  parent.document).css("height" ,  "51.9pt");
 		}		
-	});
-});//끝
+	});////햄버거아이콘. 끝부분
+	
+	//상단 로고를 눌럿을때
+	$("header a").click(function(){
+			$("nav").slideUp();
+			$(this).text("menu");		
+	});//상단 로고. 끝
+});//////////전체 끝
 </script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style>
