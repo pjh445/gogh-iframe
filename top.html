@@ -16,7 +16,9 @@ $(document).ready(function(){//시작
 		}else{
 			$("nav").slideUp();
 			$(this).text("menu");
-			//$("iframe" ,  parent.document).css("height" ,  "51.9pt");
+			$("nav").slideUp(400, function(){
+					$("iframe" ,  parent.document).css("height" ,  "51.9pt");
+			});
 		}
 	}); //햄버거아이콘 클릭. 끝부분
 	
