@@ -23,10 +23,11 @@ $(document).ready(function(){//시작
 	}); //햄버거아이콘 클릭. 끝부분
 	
 	//상단 로고를 눌럿을때
-	$("header a").click(function(){
-			$("nav").slideUp();
-			$(this).text("menu");
-			$("iframe" ,  parent.document).css("height" ,  "51.9pt");
+	$("header a").click(function(){			
+			$(this).text("menu");//닫기아이콘이 햄버거아이콘으로 변경.
+			$("nav").slideUp(400, function(){
+				$("iframe" ,  parent.document).css("height" ,  "51.9pt");
+			});
 	});//상단 로고. 끝
 		
 });//끝
@@ -35,7 +36,7 @@ $(document).ready(function(){//시작
 <style>
 * {padding:0; margin:0;}
 img {max-width:100%; display:block;}
-body {font:10pt '나눔고딕';  overflow:hidden; background:red;}
+body {font:10pt '나눔고딕';  overflow:hidden; }
 
 /*레이아웃*/
 #layout {width:414px; margin:auto; position:relative;}
