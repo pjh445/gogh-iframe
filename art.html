@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>빈센트 반 고흐</title>
+<style>
+* {padding:0; margin:0; box-sizing:border-box;}
+
+		/*Vendor prefix(벤더프리픽스 (heck 핵: 개발사가 실험적으로 제공하는 기능)*/
+		::-webkit-scrollbar {width:1px /*스크롤바넓이*/; }
+
+img {max-width:100%; display:block;}
+body {font:10pt '나눔고딕'; background:black; }
+
+/*레이아웃*/
+#layout {width:414px; margin:auto; position:relative; padding-top:51.9pt;}
+
+/*상단공통*/
+iframe {width:100%;  border:none;  position:absolute; height:51.9pt;  overflow:hidden;}
+
+/*콘텐츠*/
+#arts h2 {display:none;}
+#arts div {display:flex; flex-wrap:wrap;}
+#arts button {background:transparent; border:none; display:block; }
+
+/*팝업*/
+#popup {position:fixed; top:0px; display:none; height:100vh; overflow:auto;}
+#popup div {display:flex; align-items:center; background:black; padding:10px;}
+#popup h2 {flex:1; color:white; font-size:1.1rem; font-weight:normal;}
+#popup button {color:gray; font-size:3.5rem; background:transparent; border:none;}
+</style>
+</head>
+<body>	
+
+<div id="layout">
+	<iframe  src="top.html" title="상단 로고와 내비게이션"></iframe>
+	<section id="arts">
+		<h2>메인</h2>
+		<img src="images/art_title.jpg" alt="그의 작품">
+		<div>
+			<button type="button"><img src="images/art_01.jpg" alt="노란집"></button>
+			<button type="button"><img src="images/art_02.jpg" alt="감자먹는 사람들"></button>
+			<button type="button"><img src="images/art_03.jpg" alt="아를르의 포룸 광장의 카페 테라스"></button>
+			<button type="button"><img src="images/art_04.jpg" alt="해바라기"></button>
+			<button type="button"><img src="images/art_05.jpg" alt="아를의 고흐의 방"></button>
+			<button type="button"><img src="images/art_06.jpg" alt="까마귀가 나는 밀밭"></button>
+			<button type="button"><img src="images/art_07.jpg" alt="펠트 모자를 쓴 자화상"></button>
+			<button type="button"><img src="images/art_08.jpg" alt="별이 빛나는 밤에"></button>
+			<button type="button"><img src="images/art_09.jpg" alt="삼나무가 있는 밀밭"></button>
+			<button type="button"><img src="images/art_10.jpg" alt="자화상"></button>
+			<button type="button"><img src="images/art_11.jpg" alt="론강의 별이 빛나는 밤에"></button>
+			<button type="button"><img src="images/art_12.jpg" alt="꽃 피는 아몬드 나무"></button>
+			<button type="button"><img src="images/art_13.jpg" alt="몽마주르의 붉은 포도밭"></button>
+			<button type="button"><img src="images/art_14.jpg" alt="밤의 프로방스 시골길"></button>
+			<button type="button"><img src="images/art_15.jpg" alt="아이리스"></button>
+		</div>		
+	</section>
+	<section id="popup">
+		<div>
+			<h2>작품제품</h2>
+			<button type="button" class="material-icons">close</button>
+		</div>
+		<img src="images/art_15_big.jpg" alt="작품제목">
+	</section>
+</div>	
+	
+</body>
+</html>
+
